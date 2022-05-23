@@ -29,3 +29,11 @@ cd javax-ci-2022-05-23-oktato
 git clone https://github.com/Training360/javax-ci-2022-05-23.git .
 git pull
 ```
+
+## Labor 3. - Alkalmazás buildelése
+
+```
+set JAVA_HOME=c:\Program Files\Java\jdk-17.0.3.1\
+mvnw package
+```
+
