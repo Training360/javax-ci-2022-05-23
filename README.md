@@ -120,3 +120,13 @@ https://help.sonatype.com/repomanager3/nexus-repository-administration/formats/m
   </activeProfiles>
 </settings>
 ```
+
+## Labor 6. - Tesztlefedettség
+
+* Módosult a `pom.xml` állomány: Jacoco
+
+```
+mvnw package
+```
+
+Tesztlefedettség report létrejön a `target/site/jacoco/index.html`
