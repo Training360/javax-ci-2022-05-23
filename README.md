@@ -45,3 +45,26 @@ mvnw spring-boot:run
 
 Majd elérhető lesz a `http://localhost:8080/api/employees` címen
 
+http://localhost:8080/swagger-ui.html
+
+## Labor 5. - Nexus
+
+* Adminisztrátor módban parancssor:
+
+```
+net localgroup docker-users %USERDOMAIN%\%USERNAME% /add
+```
+
+* Kijelentkezés
+
+Docker mirror, Settings / Docker engine:
+
+```json
+
+  "registry-mirrors": ["https://mirror.gcr.io"]
+
+```
+
+```shell
+docker run --name nexus --detach --publish 8091:8081 --publish 8092:8082 sonatype/nexus3
+```
