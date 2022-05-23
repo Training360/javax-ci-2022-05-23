@@ -2,7 +2,21 @@
 
 ## Labor 1.
 
-* Könyvtár létrehozás: `java-ci-2022-05-23`
+* Könyvtár létrehozás: `javax-ci-2022-05-23`
 * Visual Studio Code indítása a könyvtárban
 * Lokális Git repo létrehozása: `git init`
+* Git felhasználónév és e-mail cím beállítása:
+
+```shell
+git config --global user.name "FIRST_NAME LAST_NAME"
+git config --global user.email "MY_NAME@example.com"
+```
+
 * Felhasználói felületen `git add` és `git commit`
+
+## Labor 2.
+
+```shell
+git remote add origin https://github.com/Training360/javax-ci-2022-05-23.git
+git push origin master
+```
