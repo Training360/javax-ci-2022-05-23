@@ -131,7 +131,7 @@ mvnw package
 
 Tesztlefedettség report létrejön a `target/site/jacoco/index.html`
 
-## Labor 7. Integrációs tesztek
+## Labor 7. - Integrációs tesztek
 
 * Átmásolni az `src/test` könyvtár tartalmát
 * Átmásolni a módosított `pom.xml` állományt
@@ -139,4 +139,27 @@ Tesztlefedettség report létrejön a `target/site/jacoco/index.html`
 
 ```
 mvnw integration-test
+```
+
+## Labor 8. - E2E tesztek
+
+* `Dockerfile` létrehozás
+* Docker image létrehozása
+
+```
+docker build -t employees-app .
+```
+
+Ha el akarom indítani az alkalmazást Dockeren belül:
+
+```
+docker run -p 8081:8080 -d --name employees-app-instance employees-app
+```
+
+* `docker-compose.yml` fájl létrehozása az `e2e` könyvtárban
+
+Kiadni az `e2e` könyvtárban:
+
+```
+docker compose up -d
 ```
