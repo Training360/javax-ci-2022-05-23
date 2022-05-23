@@ -79,6 +79,8 @@ docker exec -it nexus cat /nexus-data/admin.password
 
 https://help.sonatype.com/repomanager3/nexus-repository-administration/formats/maven-repositories
 
+`~/.m2/settings.xml`:
+
 ```xml
 <settings>
   <mirrors>
