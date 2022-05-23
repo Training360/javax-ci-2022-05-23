@@ -130,3 +130,13 @@ mvnw package
 ```
 
 Tesztlefedettség report létrejön a `target/site/jacoco/index.html`
+
+## Labor 7. Integrációs tesztek
+
+* Átmásolni az `src/test` könyvtár tartalmát
+* Átmásolni a módosított `pom.xml` állományt
+* Integrációs tesztek futtatása:
+
+```
+mvnw integration-test
+```
