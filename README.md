@@ -20,3 +20,12 @@ git config --global user.email "MY_NAME@example.com"
 git remote add origin https://github.com/Training360/javax-ci-2022-05-23.git
 git push origin master
 ```
+
+Alternatíva:
+
+```shell
+mkdir javax-ci-2022-05-23-oktato
+cd javax-ci-2022-05-23-oktato
+git clone https://github.com/Training360/javax-ci-2022-05-23.git .
+git pull
+```
