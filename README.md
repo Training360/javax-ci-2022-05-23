@@ -37,3 +37,11 @@ set JAVA_HOME=c:\Program Files\Java\jdk-17.0.3.1\
 mvnw package
 ```
 
+## Labor 4. - Alkalmazás futtatása
+
+```
+mvnw spring-boot:run
+```
+
+Majd elérhető lesz a `http://localhost:8080/api/employees` címen
+
