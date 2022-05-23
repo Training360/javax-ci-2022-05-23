@@ -68,3 +68,11 @@ Docker mirror, Settings / Docker engine:
 ```shell
 docker run --name nexus --detach --publish 8091:8081 --publish 8092:8082 sonatype/nexus3
 ```
+
+Nexus elérhetősége: `http://localhost:8091/`
+
+Admin jelszó:
+
+```
+docker exec -it nexus cat /nexus-data/admin.password
+```
