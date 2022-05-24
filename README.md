@@ -183,3 +183,9 @@ pm.test("Valid name", function () {
 docker compose down
 docker compose up --abort-on-container-exit
 ```
+
+## Labor 9. - GitLab infrastruktúra elindítása
+
+```
+cd gitlab
+docker compose up -d
