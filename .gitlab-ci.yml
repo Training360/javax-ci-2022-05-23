@@ -1,0 +1,9 @@
+image: eclipse-temurin:17
+
+stages:
+  - build
+
+build-job:
+  stage: build
+  script:
+    - echo "Hello Pipeline"
