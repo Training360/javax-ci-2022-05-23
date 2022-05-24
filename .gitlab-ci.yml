@@ -10,6 +10,7 @@ cache:
 stages:
   - build
   - test
+  - image
 
 build-job:
   stage: build
@@ -24,3 +25,9 @@ test-job:
   stage: test
   script:
     - echo "Running tests" 
+    - ./mvnw verify
+
+image-job:
+  stage: image
+  script:
+    - docker build -t employees-app:1.0.0 .
