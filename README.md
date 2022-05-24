@@ -246,3 +246,10 @@ kubectl port-forward employees-app-99d7cb7f4-srjtw 8085:8080
 
 * NE TEGYÜNK ILYET! `C:\Documents and Settings\[USER]\.kube\config ` bemásolása a projektbe
 * A `.gitlab-ci.yml` fájlban megjelent a `deploy` stage
+
+
+## Labor 16. - SonarQube
+
+```
+docker run --name employees-sonarqube --detach --publish 9000:9000 sonarqube:lts
+```
