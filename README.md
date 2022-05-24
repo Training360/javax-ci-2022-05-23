@@ -215,3 +215,9 @@ docker exec -it gitlab-gitlab-runner-1 gitlab-runner register --non-interactive 
 
 * Főkönyvtárban `.gitlab-ci.yml`
 * Automatikusan lefut a pipeline
+
+## Labor 13. - Pipeline build
+
+```
+git update-index --chmod=+x mvnw
+```
