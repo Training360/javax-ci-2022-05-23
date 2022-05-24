@@ -253,3 +253,9 @@ kubectl port-forward employees-app-99d7cb7f4-srjtw 8085:8080
 ```
 docker run --name employees-sonarqube --detach --publish 9000:9000 sonarqube:lts
 ```
+
+* My Account/ Security / Generate token
+
+```
+mvnw sonar:sonar -Dsonar.login=7a789647e7c8dc652708f5d9491e7d7bc66b05f4
+```
