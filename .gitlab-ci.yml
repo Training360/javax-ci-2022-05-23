@@ -11,6 +11,7 @@ stages:
   - build
   # - test
   - image
+  - deploy
 
 build-job:
   stage: build
@@ -32,3 +33,12 @@ image-job:
   image: docker:20.10.11
   script:
     - docker build -t employees-app:1.0.0 .
+
+deploy-job:
+  stage: deploy
+  image:
+    name: bitnami/kubectl:latest
+    entrypoint: [""]
+  script:
+    - export KUBECONFIG=config
+    - kubectl apply -f deployment.yaml

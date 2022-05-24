@@ -229,7 +229,7 @@ ne töltse le újra minden egyes pipeline futtatáskor
 
 Artifact beállítása a `.gitlab-ci.yml` fájlban
 
-## Labor 14. - Kubernetes cluster indítása
+## Labor 14. - Kubernetes cluster indítása, telepítés
 
 * Docker Desktop / Settings / Kubernetes / Enable Kubernetes
 
@@ -241,3 +241,8 @@ kubectl get all
 kubectl log -f pod/employees-app-99d7cb7f4-srjtw 
 kubectl port-forward employees-app-99d7cb7f4-srjtw 8085:8080
 ```
+
+## Labor 15. - Kubernetes clusterre telepítés pipeline-ból
+
+* NE TEGYÜNK ILYET! `C:\Documents and Settings\[USER]\.kube\config ` bemásolása a projektbe
+* A `.gitlab-ci.yml` fájlban megjelent a `deploy` stage
