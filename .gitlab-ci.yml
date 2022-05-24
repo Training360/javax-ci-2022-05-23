@@ -16,6 +16,9 @@ build-job:
   script:
     - echo "Running build"
     - ./mvnw package
+  artifacts:
+    paths:
+      - target/*.jar
 
 test-job:
   stage: test

@@ -226,3 +226,5 @@ git update-index --chmod=+x mvnw
 
 Be kell állítani a cache-elést, hogy a letöltött függőségeket
 ne töltse le újra minden egyes pipeline futtatáskor
+
+Artifact beállítása a `.gitlab-ci.yml` fájlban
