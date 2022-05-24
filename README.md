@@ -202,3 +202,11 @@ Felhasználónév: `root`
 git remote add gitlab http://localhost/gitlab-instance-9e549668/javax-ci-2022-05-23.git
 git push gitlab master
 ```
+
+## Labor 11. - GitLab Runner regisztráció
+
+Menu / Admin / Overview / Runners / Register an instance runner
+
+```
+docker exec -it gitlab-gitlab-runner-1 gitlab-runner register --non-interactive --url http://gitlab-gitlab-1 --registration-token 7gmsvmRPUbGXLBvvbajw --executor docker --docker-image docker:latest --docker-network-mode gitlab_default --clone-url http://gitlab-gitlab-1 --docker-volumes /var/run/docker.sock:/var/run/docker.sock
+```
