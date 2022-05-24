@@ -214,3 +214,4 @@ docker exec -it gitlab-gitlab-runner-1 gitlab-runner register --non-interactive 
 ## Labor 12. - Pipeline létrehozása
 
 * Főkönyvtárban `.gitlab-ci.yml`
+* Automatikusan lefut a pipeline
