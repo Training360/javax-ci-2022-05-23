@@ -2,8 +2,14 @@ image: eclipse-temurin:17
 
 stages:
   - build
+  - test
 
 build-job:
   stage: build
   script:
-    - echo "Hello Pipeline"
+    - echo "Running build"
+
+test-job:
+  stage: test
+  script:
+    - echo "Running tests" 
