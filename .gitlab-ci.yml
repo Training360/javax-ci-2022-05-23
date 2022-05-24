@@ -9,7 +9,7 @@ cache:
 
 stages:
   - build
-  - test
+  # - test
   - image
 
 build-job:
@@ -21,11 +21,11 @@ build-job:
     paths:
       - target/*.jar
 
-test-job:
-  stage: test
-  script:
-    - echo "Running tests" 
-    - ./mvnw verify
+# test-job:
+#   stage: test
+#   script:
+#     - echo "Running tests" 
+#     - ./mvnw verify
 
 image-job:
   stage: image
