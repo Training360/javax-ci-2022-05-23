@@ -189,3 +189,7 @@ docker compose up --abort-on-container-exit
 ```
 cd gitlab
 docker compose up -d
+docker exec -it gitlab-gitlab-1 grep "Password:" /etc/gitlab/initial_root_password
+```
+
+Felhasználónév: `admin`
