@@ -8,6 +8,7 @@ build-job:
   stage: build
   script:
     - echo "Running build"
+    - ./mvnw package
 
 test-job:
   stage: test
