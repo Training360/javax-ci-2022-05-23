@@ -221,3 +221,5 @@ docker exec -it gitlab-gitlab-runner-1 gitlab-runner register --non-interactive 
 ```
 git update-index --chmod=+x mvnw
 ```
+
+* Minden commit és push után megtörténik a build
