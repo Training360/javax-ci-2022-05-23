@@ -144,7 +144,7 @@ mvnw integration-test
 ## Labor 8. - E2E tesztek
 
 * `Dockerfile` létrehozás
-* Docker image létrehozása
+* Docker image létrehozása, parancsot kiadni a projekt főkönyvtárában
 
 ```
 docker build -t employees-app .
@@ -162,4 +162,24 @@ Kiadni az `e2e` könyvtárban:
 
 ```
 docker compose up -d
+```
+
+* Postmanben létrehozni egy kérést
+* Majd létrehozni a tesztet
+
+```javascript
+pm.test("Status code is 201", function () {
+    pm.response.to.have.status(201);
+});
+pm.test("Valid name", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData.name).to.eql("Jack Doe");
+});
+```
+
+* Exportálni: Collection, Environment
+
+```shell
+docker compose down
+docker compose up --abort-on-container-exit
 ```
