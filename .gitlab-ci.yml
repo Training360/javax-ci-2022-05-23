@@ -32,7 +32,7 @@ image-job:
   stage: image
   image: docker:20.10.11
   script:
-    - docker build -t employees-app:1.0.0 .
+    - docker build -t employees-app:1.0.1 .
 
 deploy-job:
   stage: deploy

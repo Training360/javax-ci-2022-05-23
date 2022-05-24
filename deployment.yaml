@@ -15,7 +15,7 @@ spec:
         app: employees-app
     spec:
       containers:
-      - image: employees-app:1.0.0
+      - image: employees-app:1.0.1
         name: employees-app
 ---
 apiVersion: v1
