@@ -228,3 +228,16 @@ Be kell állítani a cache-elést, hogy a letöltött függőségeket
 ne töltse le újra minden egyes pipeline futtatáskor
 
 Artifact beállítása a `.gitlab-ci.yml` fájlban
+
+## Labor 14. - Kubernetes cluster indítása
+
+* Docker Desktop / Settings / Kubernetes / Enable Kubernetes
+
+Alkalmazás kipróbálása a clusteren:
+
+```
+kubectl apply -f deployment.yaml
+kubectl get all
+kubectl log -f pod/employees-app-99d7cb7f4-srjtw 
+kubectl port-forward employees-app-99d7cb7f4-srjtw 8085:8080
+```
