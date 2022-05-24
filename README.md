@@ -192,4 +192,13 @@ docker compose up -d
 docker exec -it gitlab-gitlab-1 grep "Password:" /etc/gitlab/initial_root_password
 ```
 
-Felhasználónév: `admin`
+Felhasználónév: `root`
+
+## Labor 10. - GitLab projekt
+
+* Projekt létrehozása
+
+```
+git remote add gitlab http://localhost/gitlab-instance-9e549668/javax-ci-2022-05-23.git
+git push gitlab master
+```
