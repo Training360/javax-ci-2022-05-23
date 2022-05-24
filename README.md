@@ -223,3 +223,6 @@ git update-index --chmod=+x mvnw
 ```
 
 * Minden commit és push után megtörténik a build
+
+Be kell állítani a cache-elést, hogy a letöltött függőségeket
+ne töltse le újra minden egyes pipeline futtatáskor
